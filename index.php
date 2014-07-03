@@ -3,7 +3,7 @@
 <head>
 	<title> xkcd Password Generator </title>
 	<meta charset = "utf-8">
-	<link rel = "stylesheet" href = "style.css" type = "css">
+	<link rel = "stylesheet" href = "style.css">
 </head>
 
 <body>
