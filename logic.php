@@ -48,8 +48,9 @@ function getSymbols($includeSymbol,$numSymbols){
 	return $symbolString;
 }
 
-function getPassword($numWords,$includeNumber,$includeSymbol,$numSymbols,$capitalize){
+function getPassword($numWords,$includeNumber,$includeSymbol,$numSymbols,$capitalize,$subset){
 	global $words,$symbols;
+	$words = file($subset);
 	$password = getStringOfWords($numWords,$capitalize);
 	$password .= getNumber($includeNumber);
 	$password .= getSymbols($includeSymbol,$numSymbols);
